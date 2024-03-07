@@ -1,0 +1,111 @@
+.CoffeeListing {
+    width: 85vw;
+    background-color: #1B1D1F;
+    border-radius: 20px;
+    position: absolute;
+    top: 13vw;
+    left: 7.5%;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffeediv {
+    display: grid;
+    grid-template-rows: auto auto;
+    /* Two rows */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns with equal width */
+    row-gap: 20px;
+    column-gap: 10px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 7%;
+
+}
+
+.introPara {
+    width: 40vw;
+    color: #6F757C;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    margin-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.introHeading {
+    font-family: "DM Sans", sans-serif;
+    font-size: 2rem;
+    margin: 10vh 0 1vh 0;
+    position: relative;
+    z-index: 3;
+}
+
+.svgvector {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+
+.btn-div {
+
+    display: grid;
+    grid-template-rows: auto auto;
+    /* Two rows */
+    grid-template-columns: repeat(2, 1fr);
+    /* Three columns with equal width */
+    column-gap: 10px;
+
+    margin-bottom: 5vh;
+}
+
+button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #1B1D1F;
+    color: white;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.875rem;
+    box-shadow: none;
+}
+
+button.active {
+    background-color: #6F757C;
+}
+
+@media screen and (max-width:1024px) {
+
+    .CoffeeListing {
+
+        width: 70vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .coffeediv {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0px;
+        width: 60vw;
+        position: relative;
+        margin-bottom: 7%;
+
+    }
+}
+
+@media screen and (max-width:640px) {
+    .coffeediv {
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+
+
+    }
+}

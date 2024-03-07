@@ -1,0 +1,102 @@
+.coffeCard {
+    width: 75%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.CoffeeImg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popularspan {
+    position: absolute;
+    background-color: #F6C768;
+    color: black;
+    border: 1px solid;
+    top: 3%;
+    left: 3%;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.625rem;
+    /* Adjust font size for responsiveness */
+    font-weight: bold;
+    padding: 1% 2%;
+    /* Adjust padding for responsiveness */
+    border-radius: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.5vw;
+    text-align: start;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.item1 {
+    grid-column: 1;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.item2 {
+    grid-column: 2;
+    text-align: end;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+}
+
+.item2 span {
+    background-color: #BEE3CC;
+    color: #111315;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+}
+
+.item3 {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+}
+
+.item3 p {
+    margin: 0;
+    margin-left: 0.5vw;
+}
+
+.item4 {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    text-align: end;
+    color: #ED735D;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.p-rating-votes {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+}
+
+@media (max-width:1024px) {
+
+    .grid-container {
+        row-gap: 10px;
+    }
+
+}

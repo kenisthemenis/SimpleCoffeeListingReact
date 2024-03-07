@@ -1,0 +1,23 @@
+.appdiv {
+
+  height: 200vh;
+  color: #FEF7EE;
+  position: relative;
+}
+
+.coffehouseimg {
+  width: 100%;
+  height: auto;
+}
+
+.createSpace {
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width:640px) {
+  .appdiv {
+    height: 380vh;
+  }
+
+}
